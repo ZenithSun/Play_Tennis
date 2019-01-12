@@ -8,7 +8,7 @@
 
 ### Introduction
 
-For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
+For this project, I worked with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
 ![Trained Agent][image1]
 
@@ -41,3 +41,9 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 Follow the instructions in `Tennis.ipynb` to get started with training your own agent!  
 
+### Approach and Solution
+The notebook `Tennis.ipynb` contains the code to solve the reinforecement problem. The core solution to the problem is a Deep Deterministic Policy Gradient approach(DDPG), please see this [paper](https://arxiv.org/pdf/1509.02971.pdf).
+
+The agent, the deep Q-Network and memory buffer are implemented in the file `ddpg_agent.py`. The deep learning architectures for both actor and critic are defined in `model.py`.
+
+For more details of the results, please see `Report.md`.
